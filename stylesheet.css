@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: cursive;
+    font-weight: 300;
+    line-height: 1.5;
+    overflow: hidden;
+}
+
+.wrapper {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.left-section {
+    flex: 1;
+    background-color: #ffc900ed;
+    background-image: url("./image/Geometry.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.right-section {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 61px 30px;
+    flex-wrap: wrap;
+    /* background-image: linear-gradient(to bottom, #ffffff, #fff3ffc4, #ffe4e9, #ffddbbbf, #ffe392c7, #ffeb7bd1, #f7ee6edb, #ffcc00b8, #ffc900, #ffc600, #ffcc12, #ffcc12); */
+}
+.main-section{
+    display:flex;
+    flex-direction: column;
+    align-items: stretch;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.container-one {
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+align-items: center;
+justify-content: center;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #04a275;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+input{
+    margin-bottom: 1.3rem;
+    width: 300px;
+    border-radius: 24px;
+    background: #ffffff;
+    border: none;
+    color: rgb(15, 15, 15);
+    padding: 0.5rem 1rem;
+    line-height: 1.3rem;
+    text-transform: none;
+    outline-style: none;
+    font-family: cursive;
+}
+.btn {
+    position: relative;
+    font-size: 17px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10px;
+    display: inline-block;
+    border-radius: 6em;
+    transition: all .2s;
+    border: none;
+    font-family: inherit;
+    font-weight: 500;
+    color: black;
+    background-color: transparent;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.countlist {
+    font-size: 12px;
+}
+
+.myUL {
+    list-style-type: none;
+    font-size: 18px;
+    margin: 10px;
+    padding: 10px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+li {
+    margin: 10px;
+    padding: 5px 10px;
+    border-radius: 24px;
+    color: black;
+    line-height: 1.3rem;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+/* Media Queries */
+/*  
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .right-section {
+        padding: 25px;
+    }
+
+    input {
+        margin-bottom: 1.3rem;
+        width: 50%;
+    }
+
+    .btn {
+        padding: 6px;
+    }
+
+    .container-one {
+        font-size: 12px;
+    }
+}
+
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+    .left-section {
+        display: none;
+    }
+
+    /* .left-section , img{
+    display: none;
+
+} */
+
+    .header {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    .btn {
+
+        padding: 9px 15px;
+    }
+
+    .right-section {
+        background-color: #ffcc12;
+    }
+
+}
+
+
+

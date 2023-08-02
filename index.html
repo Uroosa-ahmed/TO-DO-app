@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my app</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Left Section -->
+
+        <div class="main-section left-section animate__animated animate__zoomIn">
+            <div class="container-one" id="container">
+            </div>
+        </div>
+
+
+        <!-- RIGHT Section -->
+        <div class="right-section animate__animated animate__fadeInUp">
+            <div id="myDIV" class="header">
+                <h1 class="animate__animated animate__bounce">My To Do List</h1>
+                <input type="text" id="input" class="animate__animated animate__flash" placeholder="Enter here">
+                <button onclick="addItem()" class="btn"><img src="./image/add1.png" alt="Add"></button>
+                <button onclick="deleteAll()" class="btn">Delete All</button>
+
+            </div>
+
+
+            <div class="countlist">
+                <span> TODO ITEM: </span><small id="itemCount"></small>
+            </div>
+
+            <ul class="myUL" id="todoList">
+            </ul>
+
+        </div>
+
+    </div>
+
+</body>
+<script src="app.js"></script>
+
+</html>
